@@ -16,6 +16,8 @@
 		722316582886C87D005BC004 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 722316562886C87D005BC004 /* LaunchScreen.storyboard */; };
 		722316602886CB9F005BC004 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7223165F2886CB9E005BC004 /* Model.swift */; };
 		722316622886D641005BC004 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722316612886D641005BC004 /* Date.swift */; };
+		722316652886D9A4005BC004 /* NotesListViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722316642886D9A4005BC004 /* NotesListViewController+DataSource.swift */; };
+		722316692886DCEC005BC004 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722316682886DCEC005BC004 /* FavoriteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		722316592886C87D005BC004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7223165F2886CB9E005BC004 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		722316612886D641005BC004 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		722316642886D9A4005BC004 /* NotesListViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotesListViewController+DataSource.swift"; sourceTree = "<group>"; };
+		722316682886DCEC005BC004 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +68,8 @@
 			children = (
 				722316482886C87B005BC004 /* AppDelegate.swift */,
 				7223164A2886C87B005BC004 /* SceneDelegate.swift */,
-				7223164C2886C87B005BC004 /* NotesListViewController.swift */,
-				722316612886D641005BC004 /* Date.swift */,
-				7223165F2886CB9E005BC004 /* Model.swift */,
+				722316632886D972005BC004 /* NotesListViewController */,
+				722316672886DB2A005BC004 /* Model */,
 				7223164E2886C87B005BC004 /* Main.storyboard */,
 				722316542886C87D005BC004 /* Assets.xcassets */,
 				722316562886C87D005BC004 /* LaunchScreen.storyboard */,
@@ -74,6 +77,25 @@
 				722316512886C87B005BC004 /* Notes_CoreData.xcdatamodeld */,
 			);
 			path = Notes_CoreData;
+			sourceTree = "<group>";
+		};
+		722316632886D972005BC004 /* NotesListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7223164C2886C87B005BC004 /* NotesListViewController.swift */,
+				722316642886D9A4005BC004 /* NotesListViewController+DataSource.swift */,
+				722316682886DCEC005BC004 /* FavoriteButton.swift */,
+			);
+			path = NotesListViewController;
+			sourceTree = "<group>";
+		};
+		722316672886DB2A005BC004 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				722316612886D641005BC004 /* Date.swift */,
+				7223165F2886CB9E005BC004 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +172,11 @@
 				722316602886CB9F005BC004 /* Model.swift in Sources */,
 				722316622886D641005BC004 /* Date.swift in Sources */,
 				7223164D2886C87B005BC004 /* NotesListViewController.swift in Sources */,
+				722316652886D9A4005BC004 /* NotesListViewController+DataSource.swift in Sources */,
 				722316492886C87B005BC004 /* AppDelegate.swift in Sources */,
 				722316532886C87B005BC004 /* Notes_CoreData.xcdatamodeld in Sources */,
 				7223164B2886C87B005BC004 /* SceneDelegate.swift in Sources */,
+				722316692886DCEC005BC004 /* FavoriteButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
