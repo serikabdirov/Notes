@@ -8,10 +8,11 @@
 import UIKit
 
 class NotesListViewController: UICollectionViewController {
+    #if DEBUG
     var notes: [Note] = Note.debugNotes
+    #endif
+    
     var dataSource: DataSource!
-
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,8 +37,4 @@ class NotesListViewController: UICollectionViewController {
         return UICollectionViewCompositionalLayout.list(using: listConfiguration)
     }
 
-}
-
-extension NotesListViewController {
-    
 }

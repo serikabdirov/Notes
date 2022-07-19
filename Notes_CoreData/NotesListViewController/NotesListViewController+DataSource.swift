@@ -28,7 +28,7 @@ extension NotesListViewController {
         contentConfiguration.secondaryText = note.date.dayAndTimeText
         cell.contentConfiguration = contentConfiguration
 
-        var doneButtonConfiguration = favoriteButtonConfiguration(for: note)
+        let doneButtonConfiguration = favoriteButtonConfiguration(for: note)
         cell.accessories = [ .customView(configuration: doneButtonConfiguration) ]
     }
 
