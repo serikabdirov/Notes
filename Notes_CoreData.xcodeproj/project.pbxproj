@@ -18,6 +18,7 @@
 		722316622886D641005BC004 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722316612886D641005BC004 /* Date.swift */; };
 		722316652886D9A4005BC004 /* NotesListViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722316642886D9A4005BC004 /* NotesListViewController+DataSource.swift */; };
 		722316692886DCEC005BC004 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722316682886DCEC005BC004 /* FavoriteButton.swift */; };
+		726C6A82288836EA007317EC /* NoteListViewController+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726C6A81288836EA007317EC /* NoteListViewController+Section.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		722316612886D641005BC004 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		722316642886D9A4005BC004 /* NotesListViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotesListViewController+DataSource.swift"; sourceTree = "<group>"; };
 		722316682886DCEC005BC004 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		726C6A81288836EA007317EC /* NoteListViewController+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteListViewController+Section.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				7223164C2886C87B005BC004 /* NotesListViewController.swift */,
 				722316642886D9A4005BC004 /* NotesListViewController+DataSource.swift */,
 				722316682886DCEC005BC004 /* FavoriteButton.swift */,
+				726C6A81288836EA007317EC /* NoteListViewController+Section.swift */,
 			);
 			path = NotesListViewController;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				722316532886C87B005BC004 /* Notes_CoreData.xcdatamodeld in Sources */,
 				7223164B2886C87B005BC004 /* SceneDelegate.swift in Sources */,
 				722316692886DCEC005BC004 /* FavoriteButton.swift in Sources */,
+				726C6A82288836EA007317EC /* NoteListViewController+Section.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

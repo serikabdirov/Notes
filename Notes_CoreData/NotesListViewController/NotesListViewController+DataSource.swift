@@ -8,13 +8,21 @@
 import UIKit
 
 extension NotesListViewController {
-    typealias DataSource = UICollectionViewDiffableDataSource<Int, Note.ID>
-    typealias Snapshot = NSDiffableDataSourceSnapshot<Int, Note.ID>
+    typealias DataSource = UICollectionViewDiffableDataSource<Section, Note.ID>
+    typealias Snapshot = NSDiffableDataSourceSnapshot<Section, Note.ID>
 
     func updateSnapshot(reloading ids: [Note.ID] = []) {
         var snapshot = Snapshot()
-        snapshot.appendSections([0])
-        snapshot.appendItems(notes.map { $0.id }, toSection: 0)
+
+        if notes.filter({ $0.favorite == true}).isEmpty {
+            snapshot.appendSections([.all])
+            snapshot.appendItems(notes.map({ $0.id }), toSection: .all)
+        } else {
+            snapshot.appendSections([.favorite, .all])
+            snapshot.appendItems(notes.filter({ $0.favorite == true}).map({ $0.id }), toSection: .favorite)
+            snapshot.appendItems(notes.filter({ $0.favorite == false}).map({ $0.id }), toSection: .all)
+        }
+
         if !ids.isEmpty {
             snapshot.reloadItems(ids)
         }
